@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript Practice Session 03</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f172a, #111827);
+        font-family: "Segoe UI", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        color: #f8fafc;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 900px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 45px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.8rem;
+        color: #facc15;
+        margin-bottom: 12px;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #94a3b8;
+        margin-bottom: 30px;
+        font-size: 1.05rem;
+      }
+
+      p {
+        color: #d1d5db;
+        line-height: 1.8;
+        margin-bottom: 18px;
+      }
+
+      h2 {
+        color: #38bdf8;
+        margin: 30px 0 15px;
+        border-left: 5px solid #38bdf8;
+        padding-left: 12px;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul li {
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 4px solid #facc15;
+        margin: 10px 0;
+        padding: 14px 18px;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      ul li:hover {
+        transform: translateX(8px);
+        background: rgba(250, 204, 21, 0.12);
+      }
+
+      strong {
+        color: #facc15;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin: 30px 0;
+      }
+
+      .stat-box {
+        background: rgba(56, 189, 248, 0.08);
+        border: 1px solid rgba(56, 189, 248, 0.2);
+        padding: 20px 10px;
+        text-align: center;
+        border-radius: 12px;
+      }
+
+      .stat-box h3 {
+        color: #facc15;
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+      }
+
+      .stat-box span {
+        color: #cbd5e1;
+        font-size: 0.9rem;
+      }
+
+      hr {
+        margin: 35px 0;
+        border: none;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .author {
+        text-align: center;
+        color: #94a3b8;
+      }
+
+      .author span {
+        color: #38bdf8;
+        font-weight: bold;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+        }
+
+        .container {
+          padding: 28px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        p,
+        li {
+          font-size: 0.95rem;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>🚀 JavaScript Practice Session 03</h1>
+
+      <p class="subtitle">80 Structured JavaScript Problem-Solving Exercises</p>
+
+      <p>
+        This repository contains a structured collection of JavaScript
+        problem-solving exercises focused on working with arrays, objects,
+        functions, and real-world data manipulation.
+      </p>
+
+      <p>
+        The session progresses from fundamental operations to advanced
+        logic-building challenges and practical application systems.
+      </p>
+
+      <div class="stats">
+        <div class="stat-box">
+          <h3>20</h3>
+          <span>Array Problems</span>
+        </div>
+
+        <div class="stat-box">
+          <h3>20</h3>
+          <span>Object Problems</span>
+        </div>
+
+        <div class="stat-box">
+          <h3>20</h3>
+          <span>Function Problems</span>
+        </div>
+
+        <div class="stat-box">
+          <h3>20</h3>
+          <span>Combined Problems</span>
+        </div>
+      </div>
+      <h2>📚 Topics Covered</h2>
+      <ul>
+        <li>✔ Array Methods & Data Transformation</li>
+        <li>✔ Object Manipulation & Analysis</li>
+        <li>✔ Functions & Reusable Logic</li>
+        <li>✔ map(), filter(), reduce() & find()</li>
+        <li>✔ Destructuring & Spread Syntax</li>
+        <li>✔ Rest Parameters & Higher-Order Functions</li>
+        <li>✔ Callbacks & Closures</li>
+        <li>✔ Arrays of Objects</li>
+        <li>✔ Nested Data Processing</li>
+        <li>✔ Real-World Problem Solving</li>
+      </ul>
+      <h2>💻 Practice Systems</h2>
+      <ul>
+        <li>📊 Student Grade Report System</li>
+        <li>🛒 Shopping Cart Calculator</li>
+        <li>📦 Inventory Management Logic</li>
+        <li>📚 Library Management System</li>
+        <li>🧾 Order Management System</li>
+        <li>🛍️ Mini E-Commerce System</li>
+      </ul>
+
+      <h2>🖥️ How to View Output</h2>
+      <p>
+        Open the browser's <strong>Developer Console (F12)</strong> and navigate
+        to the <strong>Console</strong> tab to view the output of all JavaScript
+        solutions.
+      </p>
+      <h2>🎯 Goal</h2>
+      <p>
+        The goal of this practice session is to strengthen JavaScript
+        problem-solving skills by working with structured data, reusable
+        functions, transformations, aggregations, and application-oriented
+        logic.
+      </p>
+      <hr />
+      <p class="author">Built with ❤️ by <span>Ravsaheb Vagre</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
